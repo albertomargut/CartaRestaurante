@@ -1,0 +1,204 @@
+body{
+    background-color:beige;
+    color:black;
+    
+
+
+}
+
+.foto-restaurante{
+width:100%;
+height:auto;
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.columnas-carta{
+    display: grid;
+    grid-template-columns: 70% 5%;
+    column-gap: 2em;
+    row-gap: 1em;
+  }
+
+
+h2{
+color:olive
+}
+  
+h4{
+    color:black
+}
+.nombre-plato{
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1em;
+    color:grey;
+  }
+  
+.precio-plato{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.titulo-sección{
+    border: 1px solid olive;
+    border-bottom:100%;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0.5em;
+    color:olive
+  }
+
+  header {
+    background-color:olive;
+    color:beige;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+
+.presentacion{
+padding: 30px;
+text-align: center;
+
+}
+.logoempresa{
+color:beige;
+font-family: 'Script Mt Bold';
+font-size: larger;
+display: flex;
+align-self: center;
+width: max-content;
+height: max-content;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu a:hover {background-color: #ddd;}
+  
+  .menu-toggle:hover .menu {display: block; }
+  
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-self: center;
+}
+
+.menu-toggle span {
+    width: 50px;
+    height: 6px;
+    background-color: beige;
+    margin: 5px 0;
+    padding:2px;
+}
+
+.menu2 {
+    list-style: none;
+    display: inline;
+}
+
+.menu2 li {
+    margin: 0 10px;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: beige;
+}
+
+.social-icons {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: -2px;
+}
+
+.button{
+    background-color: olive;
+    color:beige
+}
+
+.contacto{
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+.mapa{
+width: 100%;
+height: auto;
+
+}
+
+footer{
+position:relative;
+left:0;
+bottom:0px;
+width:100%;
+border-top: 1px solid olive;
+text-align: center;
+padding: 10px;
+margin-top:40px;
+
+
+}
